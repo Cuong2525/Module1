@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>May tinh nang cao</title>
+</head>
+
+<body>
+    <p>Máy tính Nâng Cao</p>
+    <input type="text" name="" id="view"><br>
+    <table>
+        <tr>
+            <td><button type="button" name="btn" value="1" onclick="xuly(1)"> 1 </button></td>
+            <td><button type="button" name="btn" value="2" onclick="xuly(2)">2</button></td>
+            <td><button type="button" name="btn" value="3" onclick="xuly(3)">3</button></td>
+            <td><button type="button" name="ap" value="+" onclick="xuly('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" name="btn" value="4" onclick="xuly(4)">4</button></td>
+            <td><button type="button" name="btn" value="5" onclick="xuly(5)">5</button></td>
+            <td><button type="button" name="btn" value="6" onclick="xuly(6)">6</button></td>
+            <td><button type="button" name="ap" value="-" onclick="xuly('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" name="btn" value="7" onclick="xuly(7)">7</button></td>
+            <td><button type="button" name="btn" value="8" onclick="xuly(8)">8</button></td>
+            <td><button type="button" name="btn" value="9" onclick="xuly(9)">9</button></td>
+            <td><button type="button" name="ap" value="*" onclick="xuly('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="xoa()">ac</button></td>
+            <td><button type="button" name="btn" value="0" onclick="xuly(0)">0</button></td>
+            <td><button name="btn" onclick="result()">=</button></td>
+            <td><button type="button" name="ap" value="/" onclick="xuly('/')">/</button></td>
+        </tr>
+        <script>
+            
+            function xuly(number) {
+                let view = document.getElementById("view");
+                    document.getElementById("view") = view;
+                    number += view;
+            }
+            function result() {
+                let view = document.getElementById("view");
+                document.getElementById("view") = kq
+                eval(view)
+                
+            }
+            function xoa() {
+                view.value = "";
+            }
+        </script>
+    </table>
+
+
+
+</body>
+
+</html>

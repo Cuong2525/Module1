@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let i=1
+        let j=1
+        let bang;
+        bang="<table border='1' width='300' cellspacing='0' cellpadding='3'>"
+            for(i= 1;i <= 10;i++){
+                bang = bang +"<tr>";
+                for(j= 1;j <= 10;j++){
+                    bang = bang + "<td>" + i * j+"</td>" ;
+                }
+                bang = bang + "</tr>";
+            }
+            bang = bang + "</table>";
+            document.write(bang);
+
+        //    var text ;
+        // for(i=1;i<10;i++){
+        //     if(i===5){
+        //     break}
+        //     // document.write(i)
+        //     text +="the number is"+ i+ "<br>";
+
+        // }alert(text)
+
+       
+        // for( var i=1;i<10;i++){
+        //     if(i%2!=0){
+        //         continue;
+        //     }
+        // }console.log(i)
+        
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xin chào Mọi Người</title>
+</head>
+
+<body>
+    <form>
+        Họ Và Tên<br>
+        <input type="text" id="name"><br>
+        Email<br>
+        <input type="email" name="" id="mail"><br>
+        Số điện thoại<br>
+        <input type="number" id="phone"><br>
+        Giới tính:<br>
+        Nam<input type="Radio" name="1" id="Male" checked><br>
+        Nử<input type="Radio" name="1" id="Female"><br>
+        <input type="submit" value="Đăng Ký" onclick="sent()">
+    </form>
+    <script>
+        function sent() {
+            name = document.getElementById("name").value;
+            name1 = document.getElementById("mail").value;
+            name2 = document.getElementById("phone").value;
+            name3 = document.getElementById("Male").value;
+            name4 = document.getElementById("Female").value;
+            console.log(name3);
+            console.log(name4);
+            document.write(name + "<br>", name1 + "<br>", name2 + "<br>")
+            if (name3 == true) {
+                document.write("nam")
+            }
+            else
+                document.write("nu");
+        } 
+    </script>
+</body>
+
+</html>

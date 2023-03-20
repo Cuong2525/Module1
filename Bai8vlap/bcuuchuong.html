@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // for (var i = 1; i <= 9; i++) {
+        //     for (var j = 1; j <= 10; j++) {
+        //         var kq = (i * j)
+        //         document.write(i + "x" + j + "=" + kq +"<br>")
+        //     }
+        // }
+        // let i;
+        // let text=""
+        // total= total + 1
+        // for(i=0;i<=5;i++){
+        //     text += "The number is"+ i +"<br>";
+        // }document.write(total)
+        // var table = ""; // Khởi tạo chuỗi rỗng
+
+        // for (var i = 1; i <= 9; i++) {
+        //     for (var j = 1; j <= 10; j++) {
+        //         var kq = (i * j);
+        //         // Thêm kết quả vào chuỗi với khoảng trống giữa các cột
+        //         table += i + "x" + j + "=" + kq + "\t";
+        //     }
+        //     // Kết thúc hàng ngang bằng cách thêm ký tự xuống dòng
+        //     table += "<br>";
+        // }
+
+        // document.write(table); // In ra chuỗi chứa bảng nhân
+        var bang = "<table border=1>"
+            for (i=1;i<=10;i++){
+                bang = bang +'<tr>';
+                    for(j=1;j<=9;j++){
+                        bang = bang +'<td>'+(j+1)+'x'+ i+ '=' +(j+1)*i+ '</td>'
+                    }
+                bang = bang +'</tr>'
+            }
+            bang = bang +'</table>'
+            alert(bang)
+            
+
+
+
+
+    </script>
+
+</body>
+
+</html>

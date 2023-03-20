@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xin Chao</title>
+</head>
+<body>
+    Ho va Ten:<input type="text" id="ten" value=""><br>
+    MAt khau: <input type="password" name="" id="mk" value=""><br>
+    <input type="button" value="dang nhap" id="dn"><br>
+    <script>
+        //bat su kien nut dang nhap khi click vao
+        //lay gia tri trong o input co id la ten
+        //lay gia tri trong o input co id la mk
+        document.getElementById('dn').addEventListener('click',function(){
+           var ten = document.getElementById('ten').value;//cuong
+           var mk = document.getElementById('mk').value;//123
+           //xuat ra
+           alert(ten)
+           alert(mk)
+        });
+        var name = prompt('Vui Long Nhap Ten');
+        alert(name);
+    </script>
+
+
+    
+</body>
+</html>

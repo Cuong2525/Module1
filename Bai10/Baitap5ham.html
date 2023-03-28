@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var ngoisao = ["sao1", "sao2", "sao3", "sao4", "sao5"]
+        var chomsao = ["chom1", "chom2", "chom3", "chom4", "chom5"]
+
+        function timngoisao(sao) {
+            for (let i = 0; i < ngoisao.length; i++) {
+                if (sao == ngoisao[i]) {
+                    return chomsao[i]
+                }
+            }
+        }
+        var sao = prompt("Nhập tên sao")
+        document.write(timngoisao(sao));
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

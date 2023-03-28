@@ -1,0 +1,45 @@
+<script>
+
+    function Human(ts_ten,ts_tuoi) {
+        //c2:khai báo thuộc tính
+        this.ten = ts_ten;
+        this.tuoi = ts_tuoi;
+
+        //khai báo phương thức
+        this.chayxe = function () {
+            console.log(this.ten + ' chay xe vivu');
+            this.dibo();
+        }
+        this.dibo = function () {
+            console.log('di bo sieu nhanh');
+
+        }
+    }
+    let cuong = new Human('khuong',23);
+    console.log(cuong);
+    
+    cuong.ten='Cuong';
+    cuong.tuoi=18;
+    console.log(cuong);
+
+
+    // truy cập thuộc tính
+    // cuong.ten = 'cuong';
+    // cuong.tuoi = 18;
+    // truy cập phương thức
+    // cuong.chayxe();
+    // cuong.dibo();
+    // in  đối tượng
+    // console.log(cuong);
+
+   
+    // let khuong = new Human();
+    // let phi = new Human();
+    // let hieu = new Human();
+
+    // console.log(khuong);
+    // console.log(phi);
+    // console.log(hieu);
+
+
+</script>

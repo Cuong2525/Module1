@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td>Amount</td>
+            <td>From currency</td>
+            <td>To currency</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="" id="cuong1"></td>
+            <td><select name="" id="cuong2">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select></td>
+            <td><select name="" id="cuong3">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select></section>
+            </td>
+            <td><button type="submit" onclick="change()">ĐỔI</button></td>
+        </tr>
+    </table>
+    <script>
+        function change() {
+            var hienthi = document.getElementById("cuong1").value;
+            var doi1 = document.getElementById("cuong2").value;
+            var doi2 = document.getElementById("cuong3").value;
+            if (doi1 == "VND" && doi2 == "USD") {
+                document.write(hienthi / 23000 + "Dola")
+            } else if (doi1 == "USD" && doi2 == "VND") {
+                document.write(hienthi * 23000 + "VND")
+             } else if (doi1 == "VND" && doi2 == "VND") {
+               document.write(hienthi+ "VND")
+            }
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

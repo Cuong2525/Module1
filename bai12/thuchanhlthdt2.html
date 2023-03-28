@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let hcn=function (d,r){
+            this.chieudai=d;
+            this.chieurong=r;
+            this.dientich=function(){
+                return this.chieudai*this.chieurong
+            }
+            this.chuvi=function(){
+                return (this.chieudai + this.chieurong)*2
+            }
+        }
+        let hcnhat = new hcn(3,4)
+        console.log(hcnhat.chuvi());
+        console.log(hcnhat.dientich());
+
+
+
+
+
+
+    </script>
+</body>
+</html>

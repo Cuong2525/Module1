@@ -1,0 +1,19 @@
+<canvas id="myCanvas" width="200" height="100"></canvas>
+
+<script>
+    var c = document.getElementById('myCanvas')
+    var cuong = c.getContext("2d");
+    //Vẻ Đường thẳng
+    //điểm bất kì
+    // cuong.moveTo(10, 20);
+    // //điểm kêt thúc
+    cuong.lineTo(50, 50)
+    //vẻ
+    cuong.stroke();
+    //vẻ hình chử nhật
+    cuong.fillStyle='green'
+    cuong.fillRect(50,50,200,100)
+
+
+
+</script>   

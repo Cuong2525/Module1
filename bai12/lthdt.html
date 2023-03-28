@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let cuong = {
+            chieucao: "1m70",
+            toc: "ngan ",
+            hinhdang: " do con",
+            ten: "cuong",
+            tuoi: 24,
+
+
+            a: function () {
+                console.log(this.ten + 'chạy xe vivu');
+                this.b();
+            },
+           
+            b: function () {
+                return "di bo"
+            },
+            c: function () {
+                return "di lam"
+
+            }
+        }
+        cuong.ten = 'vo cuong'
+        cuong.tuoi = 18
+
+        cuong.a();
+        console.log(cuong.b());
+        console.log(cuong.c());
+        console.log(cuong.ten);
+        console.log(cuong.tuoi);
+
+
+
+    </script>
+
+</body>
+
+</html>

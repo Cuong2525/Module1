@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu trúc điều kiện</title>
+</head>
+
+<body>
+    <script>
+        var nhap = prompt("Nhập tài khoản")
+        if (nhap == "ADMIN") {
+            var password = prompt("Nhập mât khẩu")
+            if (password == "Themaster") {
+                alert("Xin Chào")
+            } else if (password == "null") {
+                alert("Hủy Bỏ")
+            } else { alert("Sai Mật Khẩu") }
+        } else if (nhap == "null") {
+            alert("Hủy Bỏ")
+        } else {
+            alert("Tôi Không biết bạn")
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng If Else</title>
+</head>
+
+<body>
+   <input type="text" name="" id="input17" onchange="tiendien()">
+    <p id="result10">Hiển thị ở đây</p>
+    <script>
+        // var giatri = prompt('Tên chính thức của "Javascript" là gì')
+        // if (giatri == 'ECMAScript') {
+        //     alert("Đúng, Chính xác")
+        // } else { alert("Không Biết, ECMAScript") }
+        
+        function tiendien(){
+    let num = document.getElementById("input17").value;
+        let i=0;
+        let total=0;
+        let catelog = [1549,1600,2615,2701,2889];
+        do{
+            if(num>100 && i<5)
+                total += 100*catelog[i];
+            else
+                total += num*catelog[i];
+            console.log(num);
+            console.log(total)
+            num -= 100;
+            i++;
+        }while (num >0)
+    document.getElementById("result10").innerHTML ="Tiền điện tháng này = "+total + "đ";    
+}
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

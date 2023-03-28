@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bắt Sự kiện</title>
+</head>
+
+<body>
+    <p onmouseover="on()" onmouseout="on1()" id="cuong"> Đưa chuột vào đây để đổi màu</p>
+    <script>
+        function on() {
+            document.getElementById("cuong").style.color = "blue";
+        }
+        function on1() {
+            document.getElementById("cuong").style.color = "red"
+        }
+    </script>
+    <p onclick="cuong()">Click me</p>
+    <p id="id">Click vào đây</p>
+
+
+
+
+
+    <script>
+        function cuong() {
+            alert("Xin chào anh em")
+        }
+
+        var demo=document.getElementById("id").addEventListener("click",cuong1)
+        function cuong1(){
+            alert( "Xin Chào Cường")
+        }
+        
+        
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

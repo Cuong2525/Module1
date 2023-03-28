@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input type="text" name="" id="Nhap"></td>
+            <td><select name="" id="money1">
+                    <option value="USD">USD</option>
+                    <option value="VND">VND</option>
+                </select></td>
+            <td><select name="" id="money2">
+                    <option value="USD">USD</option>
+                    <option value="VND">VND</option>
+            </td>
+            <td><button type="submit" onclick=change()>Chuyển đổi</button></td>
+        </tr>
+    </table>
+    <script>
+        function change() {
+            let so = document.getElementById("Nhap").value;
+            let dulieu1 = document.getElementById("money1").value;
+            let dulieu2 = document.getElementById("money2").value;
+            if (dulieu1 == "VND" && dulieu2 == "USD") {
+                document.write(so / 23000)
+            } else if (dulieu1 == "USD" && dulieu2 == "VND") {
+                document.write(so * 23000)
+            }else if (dulieu1 == "VND" && dulieu2 =="VND"){
+                document.write (so)
+            }
+        }
+
+    </script>
+    
+
+</body>
+
+</html>

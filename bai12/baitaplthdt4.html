@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let Temperature = function () {
+
+            // khai báo thuộc tính
+            this.c = 0
+
+            // khai báo phương thức
+            this.csangf = function () {
+                //F = ( C × 9/5 ) + 32
+                var f = (this.c * 9 / 5) + 32
+                return f
+
+            }
+            this.csangk = function () {
+                //K = C + 273,15
+                var k=this.c +273.15
+                return k
+            }
+        }
+
+        // Khởi tạo một đối tượng Temperature.
+        let tem = new Temperature();
+        // Gán giá trị độ C cho đối tượng ở nhiệt độ 25 độ.
+        tem.c = 25
+        console.log( tem.csangf() );
+        console.log((tem.csangk()));
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

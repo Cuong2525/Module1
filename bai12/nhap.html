@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành lập trình hướng đối tượng</title>
+</head>
+
+<body>
+    <script>
+        // var emailkey = 'email';
+
+        // var myInfor = {
+        //     name: 'cuong vo',
+        //     age: 18,
+        //     address: 'quanng tri,VN',
+        //     [emailkey]: 'cuongneverlove.gmail.com',
+
+        //     getName: function () {
+        //         return this.name;
+        //     }
+        // };
+        // console.log(myInfor.email);
+
+
+
+
+        // //object constructor
+        // function user(firstName,LastName,Avatar){
+        //     this.firstName= firstName
+        //     this.LastName= LastName
+        //     this.Avatar= Avatar
+        // }
+        // var giangvien= new user('cuong','vo','avatar')
+        // var hocvien= new user('khuong','nguyen','avatar')
+
+        // console.log(user.firstName);
+
+        //khai báo đối tượng
+        var user = function (ten, tuoi, namsinh) {
+            this.ten = ten;
+            this.tuoi = tuoi;
+            this.namsinh = namsinh;
+            this.getName =function(){
+                return this.tuoi * this.namsinh
+            }
+            
+        };
+        var hocvien = new user('cuong', 18, 1999)
+        console.log(hocvien.getName());
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

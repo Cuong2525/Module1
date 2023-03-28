@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm giá trị lớn nhất trong dãy số</title>
+</head>
+
+<body>
+    <script>
+        var mang = [5, 10, 4, 20, 30, 90, 57, 49,99]
+        var max = mang[0]
+        let vitri
+        for (let i = 1; i < mang.length; i++) {
+            if (mang[i] > max) {
+                max = mang[i]
+                vitri = i
+            }
+        } console.log(max + "vị trí là " + vitri);
+
+
+
+    </script>
+
+</body>
+
+</html>

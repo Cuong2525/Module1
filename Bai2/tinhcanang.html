@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Tính Chỉ số Cân nặng</h1>
+    <form action="">
+        Chiều cao <input type="text" name="" id="dulieu1"><br>
+        Cân nặng <input type="text" name="" id="dulieu2"><br>
+        <button type="submit" onclick="xulynhanh()">Nhập Dử liệu </button>
+
+    </form>
+    <script>
+        function xulynhanh() {
+            var cao = document.getElementById("dulieu1").value;
+            var nang = document.getElementById("dulieu2").value;
+            var bmi = nang / (cao * cao)
+
+            if (bmi < 18.5) {
+                alert("Underweight")
+            } else if (bmi >= 18.5 && bmi < 25) {
+                alert("Nomal")
+            } else if (bmi > 25 && bmi < 30) {
+                alert("Overweight")
+            } else { 
+                alert("Obese") 
+            }
+
+
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>

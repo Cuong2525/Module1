@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Order Form</h1>
+    Bạn muốn mua gì?<br>
+    <select name="" id="">
+        <option value="">Giá ở đây</option>
+        <option value="">$1</option>
+        <option value="">$2</option>
+        <option value="">$3</option>
+        <option value="">$4</option>
+        <option value="">$5</option>
+    </select><br>
+    Bạn muốn đặt bao nhiêu?<br>
+    <input type="radio" name="ok" id="">1-10$<br>
+    <input type="radio" name="ok" id="">2-20$<br>
+    <input type="radio" name="ok" id="">3-30$<br>
+    Tên:
+    <input type="text" name="" id="" value="Fistname">
+    <input type="text" name="" id="" value="Lastname"><br>
+    Email:<br>
+    <input type="email" name="" id=""><br>
+    Phone Number:<br>
+    <input type="number" name="" id="">-
+    <input type="number" name="" id="">-
+    <input type="number" name="" id=""><br>
+    <button type="submit">NHẬP</button><br>
+
+
+    <form action="https://www.google.com/">
+        <input type="text" name="" id=""><br>
+        <input type="submit" value="Tìm Kiếm">
+        <input type="range" name="score" id="score" value="50" min="0" max="100">
+
+
+
+
+    </form>
+
+    <input type="range" name="score" id="score" value="50" min="0" max="100">
+    <input type="range" name="score" id="score" value="50" min="0" max="1000">
+    <table border="1" cellpadding="1" cellspacing="5">
+        <tr>
+             <th>Name</th>
+             <th>Telephone</th>
+        </tr>
+        <tr>
+             <td>Bill Gates</td>
+             <td>55577854</td>
+        </tr>
+     </table>
+     <p>Danh sách xe Nhà cường</p>
+     <select name="" id="cuong" onchange="dangcap()">
+        <option value="">-Chonxe-</option>
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="Mer">Mer</option>
+        <option value="Volvo">Volvo</option>
+
+
+     </select>
+     <script>
+        function dangcap(){
+            var xe=document.getElementById('cuong').value;
+            alert(xe)
+        }
+     </script>
+
+
+
+
+
+</body>
+</html>

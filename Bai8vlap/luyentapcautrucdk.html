@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện tập cấu trúc điều kiện</title>
+</head>
+
+<body>
+    <script>
+        //bai1
+        // var a=prompt("Nhập số a");
+        // var b=prompt("Nhập số b")
+        // if (a%b==0){
+        //     alert(a +" Chia hết cho "+b)
+        // }else{
+        //     alert(a +" Không chia hết cho "+b)
+        // }
+
+        // bai2
+        // var tuoi = prompt("Nhập tuổi của bạn")
+        // if (tuoi == 15) {
+        //     document.write(tuoi + " Vào lớp 10")
+        // } else if (tuoi > 15) {
+        //     document.write(tuoi + " Đã đủ tuổi để vào lớp 10")
+        // } else {
+        //     document.write(tuoi + " Chưa đủ tuổi vào lớp 10")
+        // }
+
+        //bai3
+        // var number=parseInt(prompt("Nhập số nguyên bất kỳ"))
+        // if(number==0){
+        //     alert( number +" Đây chính là số 0")
+        // }else if(number>0){
+        //     alert(number +" Số lớn hơn 0")
+        // }else{
+        //     alert(number + " Số bé hơn 0")
+        // }
+        //bai4
+        // var diemkt = parseInt(prompt("Điểm kiểm tra"))
+        // var diemthi = parseInt(prompt("Điểm thi giữa kì"))
+        // var diemthi1 = parseInt(prompt("Điểm thi cuối kì"))
+        // var dtb = (diemkt + diemthi + diemthi1) / 3
+        // if(dtb>=8.5){
+        //     alert(dtb+" Học sinh giỏi")
+        // }else if(dtb<8.5 && dtb>7){
+        //     alert(dtb +" Học sinh khá")
+        // }else{
+        //     alert(dtb+" Học sinh trung bình")
+        // }
+
+        //bai3luyentap2
+
+        // var a=5
+        // var dientich=a*a
+        // console.log(dientich);
+
+        //bai4luyebtap2
+        // var a=5
+        // var b=7
+        // var dientich=a*b
+        // console.log(dientich)
+
+        //bai5luyentap2--tinh dien tich tam giac vuong
+        // var a= 10
+        // var b=8
+        // var dientich=1/2*(a*b)
+        // alert(dientich)
+
+    </script>
+    <!-- bai6luyentap2 chuyendoituCsangF -->
+
+
+    <!-- <input type="text" id="input01" onchange="CsangF()"> -->
+    <!-- <button type="submit" onclick="CsangF()">Nhập</button> -->
+    <!-- <p id="result01">Hiển thị</p>
+    <script>
+        function CsangF() {
+            let value = document.getElementById("input01").value;
+            document.getElementById("result01").innerHTML = "F= " + (value * (9 / 5) + 32);
+        }
+    </script> -->
+    <h4>Đây là bài tập  tính diện tích hình vuông</h4>
+    <input type="text" name="" id="input02" onchange="dientichvuong()">
+    <p id="result02">Hiển thị</p>
+    <script>
+        function dientichvuong(){
+            let value1=document.getElementById("input02").value;
+            document.getElementById("result02").innerHTML = "Diện tích là "+value1*value1
+        }
+    </script>
+<p>Đây là bài tập tính diện tích hình chử nhật</p>
+    <input type="text" name="" id="input03"><br>
+    <input type="text" name="" id="input04"><br>
+    <button type="submit" onclick="dientichhcn()">Nhập</button>
+    <p id="hienthi">Hiển thị</p>
+    <script>
+        function dientichhcn(){
+            var a=document.getElementById("input03").value;
+            var b=document.getElementById("input04").value;
+            document.getElementById("hienthi").innerHTML="Diện tích hình chử nhật là "+a *b 
+        }
+    </script>
+    <!-- tính diện tích tam giác vuông bằng hàm --><br>
+    <p>Đây là bài tập tính diện tích tam giác vuông</p>
+    <input type="text" name="" id="input05"><br>
+    <input type="text" name="" id="input06"><br>
+    <p id="hienthi1">Hiển Thị Ở Đây</p><br>
+    <button type="submit" onclick="stamgiacvuong()">Bấm vào đây</button>
+
+    <script>
+        function stamgiacvuong(){   
+            var c=document.getElementById("input05").value;
+            var d=document.getElementById("input06").value;
+            document.getElementById("hienthi1").innerHTML = "Diện tích tam giác vuông là " + 1/2*(c*d)
+        }
+
+
+
+
+    </script>
+
+    
+
+
+
+
+
+
+
+</body>
+
+</html>

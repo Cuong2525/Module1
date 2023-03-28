@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện tập sử dụng mảng</title>
+</head>
+
+<body>
+    <input type="text" name="" id="nhap">
+    <button type="submit" onclick="xulyadd()">Add</button>
+    <button type="submit" onclick="xulydisplay()">Display</button>
+    <script>
+        let mang = []
+        let i=0;
+        function xulyadd(){
+            let x = document.getElementById("nhap").value;
+            mang[i]=x;
+            alert("Phần tử "+ x +" Đã thêm vào "+i)
+            i++;
+            document.getElementById("nhap").value=""
+        }
+        function xulydisplay(){
+            console.log(mang)
+        }
+    
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

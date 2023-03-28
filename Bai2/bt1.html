@@ -1,28 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <script>
+    <!-- <script>
         var vl = parseInt(prompt('nhap diem vat ly'))
         var hh = parseInt(prompt('nhap diem hoa hoc'))
         var sh = parseInt(prompt('nhap diem sinh hoc'))
 
         var tb = (vl+hh+sh)/3
-        var t =vl+hh+sh
         alert(tb)
-        alert(t)
+    </script> -->
+    <!-- <script>
+        var toan =parseInt (prompt('Nhap diem toan'))
+        var  ly =parseInt (prompt('Nhap diem ly'))
+        var hoa =parseInt (prompt ('Nhap diem hoa'))
+        var tb=(toan+ly+hoa)/3
+        alert(tb)
+    </script> -->
 
+    <table boder="1">
+        <tr>
+            <th>Amount</th>
+            <th>from curency</th>
+            <th>to curency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input type="text" name="" id="Nhap"></td>
+            <td><select id="money1">
+                    <option value="USD" id="">Dola</option>
+                    <option value="VND" id="">VND</option>
+                </select>
+            </td>
+            <td><select id="money2">
+                    <option value="USD" id="">Dola</option>
+                    <option value="VND" id="">VND</option>
+            </td>
+            <td><button type="submit" onclick="change()">Đổi</button></td>
+        </tr>
+    </table>   
+    <script>
+        function change() {
+            let so = document.getElementById("Nhap").value;
+            let dulieu1 = document.getElementById("money1").value;
+            let dulieu2 = document.getElementById("money2").value;
+            if (dulieu1 == "VND" && dulieu2 == "USD") {
+                document.write(so / 23000 + "Đ")
+            } else if (dulieu1 == "USD" && dulieu2 == "VND") {
+                document.write(so * 23000 + "Usd")       
+        }}
 
 
     </script>
 
 
 
-    
 </body>
+
 </html>

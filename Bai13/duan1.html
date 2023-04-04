@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý</title>
+    <link rel="stylesheet"F href="duan1.css">
+
+</head>
+
+<body>
+
+    <img src="https://media.istockphoto.com/id/1400359666/vi/anh/an-ninh-m%E1%BA%A1ng-b%E1%BA%A3o-m%E1%BA%ADt-h%E1%BB%87-th%E1%BB%91ng-b%E1%BA%A3o-m%E1%BA%ADt-c%C3%B4ng-ngh%E1%BB%87-internet-an-to%C3%A0n-d%E1%BB%AF-li%E1%BB%87u-l%E1%BB%9Bn-m%C3%A3-h%C3%B3a-h%C3%ACnh-%E1%BA%A3nh.jpg?b=1&s=170667a&w=0&k=20&c=DRomcerWjY1f97tqp0bxS9OqOLcUIV8972xK0TPh0wM="
+        width=1270px height=200px <div>
+    <table id="listtaikhoan" border="1" style="  float:right ; width:600px">
+        <tr>
+            <th colspan="6">Danh Sách tài khoản</th>
+        </tr>
+        <tr>
+            <td>Tài khoản</td>
+            <td>Mật khẩu</td>
+            <td>Email</td>
+            <td>Mật khẩu cấp 2</td>
+            <td>Giới tính</td>
+            <td>Tùy Chọn</td>
+        </tr>
+        <tbody id="list-taikhoans">
+        </tbody>
+    </table>
+    <table border=0 style="width:600px">
+        <tr>
+            <th colspan=2>Thông Tin Đăng Ký</th>
+        </tr>
+        <tr>
+            <td>Tài Khoản:</td>
+            <td>
+                <input type="text" name="username" id="fullname" placeholder="Nhập tài khoản">
+              
+                <span id="saitk"></span>
+              </td>
+        </tr>
+        <tr>
+            <td>Mật Khẩu:</td>
+            <td><input type="password" name="" id="pass" placeholder="Nhập mật khẩu">
+                <span id="saimk"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="" id="mail" placeholder="Email đăng ký">
+                <span id="saimail"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Mật Khẩu Cấp 2:</td>
+            <td><input type="password" name="" id="pass2" placeholder="Nhập mật khẩu cấp 2">
+                <span id="saimk2"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>Giới tính:</td>
+            <td><input type="radio" name="gender" id="male" value="Nam">Nam <input type="radio" name="gender" id="female" value="Nữ">Nữ
+                <span id="gioitinh"></span>
+            </td>
+
+        </tr>
+        <tr>
+            <td colspan="2"><button type="submit" id="add" onclick="dangky()">ĐĂNG KÝ</button></td>
+        </tr>
+
+
+    </table>
+
+
+
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+    <script src="duan1.js"></script>
+
+
+
+</body>
+
+</html>

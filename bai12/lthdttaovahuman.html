@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Táo và human</title>
+</head>
+
+<body>
+    <script>
+        class apple {
+            constructor(weight) {
+                this.weight = weight
+            }
+            getWeight() {
+                return this.weight
+            }
+            setweight() {
+                this.weight = weight
+            }
+            isEmpty() {
+                if (this.weight <= 0) {
+                    return true;
+                } else {
+                    return false;
+                }
+            } giamtao() {
+                if (this.isEmpty()) {
+                    alert("táo đã hết rồi")
+                } else {
+                    this.weight--;
+                }
+            }
+        }
+        class Human {
+            constructor(name, gender, weight) {
+                this.name = name;
+                this.gender = gender;
+                this.weight = weight;
+            }
+            getName() {
+                return this.name;
+            }
+            setName(Name) {
+                this.name = name;
+            }
+            getWeight() {
+                return this.weight
+            }
+            setweight() {
+                this.weight = weight
+            }
+            Ismale() {
+                if (this.gender == 1) {
+                    return true
+                } else {
+                    return false
+                }
+            }
+            getgender() {
+                if (this.Ismale()) {
+                    return "male";
+                } else {
+                    return "female";
+                }
+            }
+            setweight(weight) {
+                this.weight = weight;
+            }
+            say(string) {
+                console.log(string);
+            }
+            checkapple(apple) {
+                return apple.isEmpty();
+            }
+            eat(apple) {
+                if (apple.getWeight() > 0) {
+                    apple.giamtao();
+                    this.weight++;
+                } else {
+                    alert("Táo đã hết rồi")
+                }
+            }
+            getInfo(human) {
+                alert(Human.name + "" + Human.weight + "" + Human.getGender())
+            }
+        }
+        let adam = new Human("cuong", 1, 65)
+        let eva = new Human("khuong", 30, 55)
+        console.log(adam.getgender());
+        console.log(adam);
+        console.log(eva);
+        console.log(eva.getgender());
+        let apple_1 = new apple(10);
+        while (apple_1.isEmpty() !== true) {
+            document.write(adam.name+" ăn táo" + "<br>");
+            adam.eat(apple_1);
+
+            document.write("Quả táo còn: " + "<br>");
+            document.write(apple_1.getWeight() + " đơn vị" + "<br>");
+            document.write("Cân nặng của Adm là: " + adam.getWeight() + " đơn vị" + "<br>");
+
+            document.write("<br>")
+
+            document.write(adam.name+" ăn táo" + "<br>");
+            eva.eat(apple_1);
+
+            document.write("Quả táo còn: " + "<br>");
+            document.write(apple_1.getWeight() + " đơn vị" + "<br>");
+            document.write("Cân nặng là: " + eva.getWeight() + " đơn vị" + "<br>");
+        }
+
+    </script>
+
+</body>
+
+</html>

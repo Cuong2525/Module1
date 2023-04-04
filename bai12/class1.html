@@ -8,20 +8,19 @@
 </head>
 <body>
     <script>
-        class hinhtron{
-            constructor(r,color)
-        }`                       
+    let diem = [5, 10, 15, 20, 25];
+let tb = 0;
 
+function findAvg(arr) {
+  let sum = 0;
+  for (let i = 0; i < diem.length; i++) {
+    sum += diem[i];
+  }
+  tb = sum / diem.length;
+}
 
-
-        
-
-
-
-
-
-
-    </script>
-    
+findAvg(diem);
+document.write(tb);
+</script>
 </body>
 </html>

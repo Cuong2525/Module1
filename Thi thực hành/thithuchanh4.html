@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+    <script>Bài4:
+    class Rectangle {
+        constructor(x, y, chieu_dai, chieu_rong, color) {
+            this.x = x;
+            this.y = y;
+            this.width = chieu_dai;
+            this.height = chieu_rong;
+            this.color = color;
+        }
+        render() {
+            var c = document.getElementById("myCanvas");
+            var cuog = c.getContext("2d");
+            cuog.fillStyle = this.color;
+            cuog.fillRect(this.x, this.y, this.width, this.height);
+        }
+    }
+    var hinhchunhat = new Rectangle(10, 10, 200, 100, '#ff5349')
+    hinhchunhat.render();
+</script>
+    
+</body>
+</html>

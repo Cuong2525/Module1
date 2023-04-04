@@ -1,0 +1,22 @@
+/* .first{
+    color: rgb(0, 140, 255);
+    font-size:30px ;
+} */
+
+html{
+    color: skyblue;
+}
+
+:root{
+    --text-color: green;
+}
+h1{
+    color:var(--text-color);
+}
+h2{
+    --my-color:blue;
+    color:var(--my-color);
+}
+h3{
+    color:var(--text-color);
+}

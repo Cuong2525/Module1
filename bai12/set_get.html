@@ -13,15 +13,15 @@
             this.tuoi = ts_tuoi;
         }
         //khai báo phương thức getter;trả về giá trị thuôc tính
-        this.getTen=function(ts_ten){
+        this.getTen=function(){
             return this.ten;
         }
-        this.getTuoi=function(ts_tuoi){
+        this.getTuoi=function(){
             return this.tuoi;
         }
     }
     let cuong = new Human('khuong', 18)
-    cuong.setTen('cuong');
+    cuong.setTen('cuong111');
     cuong.setTuoi(19);
     console.log(cuong.getTen());
     console.log(cuong.getTuoi());
